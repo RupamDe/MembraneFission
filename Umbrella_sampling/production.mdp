@@ -1,0 +1,48 @@
+integrator               = md
+dt                       = 0.02 
+nsteps                   = 2000000
+
+comm-grps                = system
+nstcomm                  = 100
+
+freezegrps = DM
+freezedim = Y Y Y
+
+
+nstlog                   = 5000   ; Output frequency for energies to log file 
+nstenergy                = 5000   ; Output frequency for energies to energy file
+nstxtcout                = 50000  ; Output frequency for .xtc file
+xtc_precision            = 100
+
+nstlist                  = 10
+ns_type                  = grid
+pbc                      = xyz
+
+cutoff-scheme            = verlet
+verlet-buffer-tolerance  = 0.005
+
+coulombtype              = reaction-field
+rcoulomb_switch          = 0.0
+rcoulomb                 = 1.2
+epsilon_r                = 15
+
+vdw_type                 = cutoff   
+rvdw_switch              = 0.9
+vdw-modifier             = Potential-shift-verlet
+rvdw                     = 1.2
+
+tcoupl                   = v-rescale 
+tc-grps                  = system
+tau_t                    = 1.0   
+ref_t                    = 303  
+
+Pcoupl                   = berendsen 
+Pcoupltype               = semiisotropic
+tau_p                    = 5.0   
+compressibility          = 3e-4 3e-4
+ref_p                    = 1.0  1.0
+
+gen_vel                  = yes
+gen_temp                 = 303
+gen_seed                 = -1
+
