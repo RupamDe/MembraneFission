@@ -1,0 +1,31 @@
+#include "toppar/martini_v2.2.itp"
+
+#define RUBBER_BANDS
+
+#include "toppar/Protein_A.itp"
+#include "toppar/Protein_B.itp"
+#include "toppar/Protein_C.itp"
+#include "toppar/Protein_D.itp"
+
+#include "toppar/martini_v2.0_lipids_all_201506.itp"
+#include "toppar/martini_v2.0_ions.itp"
+
+[ system ]
+; name
+Martini system from 4.pdb
+
+[ molecules ]
+; name        number
+Protein_A        1
+Protein_B        1
+Protein_C        1
+Protein_D        1
+Protein_A 	 1
+Protein_B 	 1
+Protein_C 	 1
+Protein_D 	 1
+DOPE 3449
+W    84935
+CL   16
+WF   9131
+

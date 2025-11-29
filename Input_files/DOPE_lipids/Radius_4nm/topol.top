@@ -1,0 +1,12 @@
+#include "toppar/martini_v2.2.itp"
+#include "toppar/martini_v2.0_lipids_all_201506.itp"
+#include "toppar/martini_v2.0_ions.itp"
+
+
+[ system ]
+BUMPy system in water
+
+[ molecules ]
+DOPE 2364
+W               78244
+WF              8873

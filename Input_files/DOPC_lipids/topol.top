@@ -1,0 +1,11 @@
+#include "toppar/martini_v2.2.itp"
+#include "toppar/martini_v2.0_lipids_all_201506.itp"
+#include "toppar/martini_v2.0_ions.itp"
+
+[ system ]
+BUMPy system
+
+[ molecules ]
+DOPC 3244
+W    84986
+WF   9134
