@@ -4,7 +4,7 @@
 
 This directory contains .gro files of the last frame of the trajectory, .top files and .mdp files corrsponding to various systems.
 
-### Command to generate the initial file using BUMPY:
+#### Command to generate the initial file using BUMPY:
 
 _python2 bumpy.py -f flat-dope.pdb -s cylinder -z 8.3 -g r_cylinder:40 l_cylinder:300 -o dope-cyl.pdb -p topol.top -n index.ndx_
 
