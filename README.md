@@ -8,7 +8,7 @@ This directory contains .gro files of the last frame of the trajectory, .top fil
 
 _python2 bumpy.py -f flat-dope.pdb -s cylinder -z 8.3 -g r_cylinder:40 l_cylinder:300 -o dope-cyl.pdb -p topol.top -n index.ndx_
 
-Here, r_cylinder and l_cylinder indicates the radius and length of the cylinderical tube (in angstrom) repectively. -z is to set the location of the pivotal plane (ref. 1) at 8.3 (for DOPE) angstrom, -s is to set gerometry of the flat membrane (flat_dope.pdb) as a cylinder.
+Here, r_cylinder and l_cylinder indicates the radius and length of the cylinderical tube (in angstrom) repectively. -z is to set the distance 8.3 angstrom for DOPE lipid (9.1 angstrom for DOPC lipid) between the pivotal plane (ref. 1) and the bilayer center, -s is to set gerometry of the flat membrane (flat_dope.pdb) as a cylinder.
 
 
 ## Umbrella_sampling
